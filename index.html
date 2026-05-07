@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+
+const text = "Mutiara Azizi";
+let index = 0;
+
+function typingEffect(){
+
+    document.querySelector('.typing').innerHTML =
+    text.slice(0,index);
+
+    index++;
+
+    if(index <= text.length){
+        setTimeout(typingEffect,150);
+    }
+}
+
+typingEffect();
+
+</script>
+
+<body>
+
+<header>
+
+    <div class="logo">MUTIARA AZIZI</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Hello, I'm
+            <span class="typing">Mutiara Azizi</span>
+        </h1>
+
+        <p>
+            Mahasiswa Sistem Informasi yang memiliki passion
+            di bidang Web Design, UI/UX, dan Teknologi Digital.
+        </p>
+
+        <a href="about.html" class="btn">
+            Explore More
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 Personal Website | Designed by Mutiara Azizi
+    </p>
+</footer>
+
+</body>
+</html>

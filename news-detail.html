@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Activities Detail</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">MUTIARA AZIZI</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="section">
+
+    <h2 class="title">
+        News <span>Details</span>
+    </h2>
+
+    <div class="card" id="content-box">
+
+    </div>
+
+    <br><br>
+
+    <center>
+
+        <a href="news.html" class="btn">
+            Back
+        </a>
+
+    </center>
+
+</section>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const type = params.get("type");
+
+const contentBox = document.getElementById("content-box");
+
+if(type === "organization"){
+
+    contentBox.innerHTML = `
+
+        <div class="card">
+
+            <h3
+            style="
+            font-size:38px;
+            color:#ec4899;
+            margin-bottom:20px;
+            ">
+                Organization Journey
+            </h3>
+
+            <p
+            style="
+            line-height:1.9;
+            color:#666;
+            ">
+                Aktif mengikuti seminar dan webinar
+                untuk meningkatkan wawasan,
+                skill digital, dan pengetahuan
+                di bidang teknologi.
+            </p>
+
+            <br><br>
+
+            <!-- BUKTI GALLERY -->
+
+            <div class="news-grid">
+
+                <!-- BUKTI 1 -->
+
+                <div class="card">
+
+                    <img
+                    src="journey1.jpeg"
+
+                    alt="journey"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Panitia-AKSOS
+                    </h3>
+
+                     <p>
+                        Kegiatan sosial
+                        untuk membantu masyarakat
+                        yang membutuhkan.
+                    </p>
+
+                </div>
+
+                <!-- BUKTI 2 -->
+
+                <div class="card">
+
+                    <img
+                    src="journey2.jpeg"
+
+                    alt="journey"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Panitia-LKMM
+                    </h3>
+
+                    <p>
+                        Kegiatan Latihan Keterampilan Manajemen Mahasiswa
+                        untuk meningkatkan kemampuan organisasi dan kepemimpinan.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+
+}
+
+else if(type === "project"){
+
+    contentBox.innerHTML = `
+
+        <div class="card">
+
+            <h3
+            style="
+            font-size:38px;
+            color:#ec4899;
+            margin-bottom:20px;
+            ">
+                Latest Project
+            </h3>
+
+            <p
+            style="
+            line-height:1.9;
+            color:#666;
+            ">
+                Aktif mengikuti seminar dan webinar
+                untuk meningkatkan wawasan,
+                skill digital, dan pengetahuan
+                di bidang teknologi.
+            </p>
+
+            <br><br>
+
+            <!-- BUKTI GALLERY -->
+
+            <div class="news-grid">
+
+                <!-- BUKTI 1 -->
+
+                <div class="card">
+
+                    <img
+                    src="projek1.png"
+
+                    alt="project"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Pemograman Web
+                    </h3>
+
+                    <p>
+                        Membuat website yang terdapat soal
+                        dan jawaban beserta diakhir terdapat form.
+                    </p>
+
+                </div>
+
+                <!-- BUKTI 2 -->
+
+                <div class="card">
+
+                    <img
+                    src="projek2.png"
+
+                    alt="project"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        UI/UX Design 
+                    </h3>
+
+                    <p>
+                        Desain UI/UX modern
+                        menggunakan Figma.
+                    </p>
+
+                </div>
+
+                <!-- BUKTI 3 -->
+
+                <div class="card">
+
+                    <img
+                    src="projek3.png"
+
+                    alt="project"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Pengantar Multimedia
+                    </h3>
+
+                    <p>
+                        Memasukkan video dan audio 
+                        ke dalam website menggunakan HTML
+                        dan CSS.
+                    </p>
+
+                </div>
+
+                <!-- BUKTI 4 -->
+
+                <div class="card">
+
+                    <img
+                    src="projek4.png"
+
+                    alt="project"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Pengantar Multimedia
+                    </h3>
+
+                    <p>
+                        membuat card dan mengubah font dan 
+                        mengganti warna menggunakan CSS
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+
+}
+
+else if(type === "seminar"){
+
+    contentBox.innerHTML = `
+        <div class="card">
+
+            <h3
+            style="
+            font-size:38px;
+            color:#ec4899;
+            margin-bottom:20px;
+            ">
+                 Seminars & Webinars
+            </h3>
+
+            <p
+            style="
+            line-height:1.9;
+            color:#666;
+            margin-bottom:40px;
+            ">
+                Aktif mengikuti seminar, workshop,
+                dan webinar untuk meningkatkan
+                skill digital serta wawasan
+                di bidang teknologi dan data science.
+            </p>
+
+            <!-- CERTIFICATE GALLERY -->
+
+            <div class="news-grid">
+
+                <!-- CERTIFICATE 1 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certicate DQLAB Fundamental SQL using Select Statement.png"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        DQLAB Fundamental SQL
+                    </h3>
+
+                    <p>
+                        Belajar dasar SQL menggunakan
+                        SELECT Statement di DQLAB.
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 2 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certificate LAB-IR FLAIR.png"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        LAB-IR FLAIR
+                    </h3>
+
+                    <p>
+                        Mengikuti kegiatan dan pelatihan
+                        pengembangan skill teknologi.
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 3 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certificate BEES.jpg"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        BEES Program
+                    </h3>
+
+                    <p>
+                        Mengikuti program pengembangan
+                        kemampuan digital dan teamwork.
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 4 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certificate DQLAB Guide to learn R with AI DQLAB.png"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Learn R with AI
+                    </h3>
+
+                    <p>
+                        Belajar dasar bahasa R
+                        untuk data science di DQLAB.
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 5 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certificate DQLAB introduction to Data Science with R.png"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Data Science with R
+                    </h3>
+
+                    <p>
+                        Pengenalan data science
+                        menggunakan bahasa R.
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 6 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certificate DQLAb Python Fundamental for Data Science.png"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Python Fundamental
+                    </h3>
+
+                    <p>
+                        Belajar dasar Python
+                        untuk kebutuhan data science.
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 7 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certificate DQLAB R Fundamental for Data Science.png"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        R Fundamental
+                    </h3>
+
+                    <p>
+                        Fundamental bahasa R
+                        untuk pengolahan data.
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 8 -->
+
+                <div class="card">
+
+                    <img
+                    src="Certificate MOS word.png"
+
+                    alt="certificate"
+
+                    style="
+                    width:100%;
+                    border-radius:20px;
+                    margin-bottom:20px;
+                    transition:0.4s;
+                    ">
+
+                    <h3>
+                        Microsoft Office Specialist
+                    </h3>
+
+                    <p>
+                        Sertifikasi Microsoft Word
+                        untuk kemampuan administrasi digital.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+
+}  
+
+</script>
+
+<footer>
+
+    <p>
+        © 2026 Personal Website | Designed by Mutiara Azizi
+    </p>
+
+</footer>
+
+</body>
+</html>
